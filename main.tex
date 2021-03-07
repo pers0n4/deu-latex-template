@@ -1,0 +1,47 @@
+\documentclass[
+  a4paper,
+  11pt,
+  onecolumn,
+  oneside,
+  openany,
+  chapter,
+  tocentry,
+  nokorean,
+  nounfonts
+]{oblivoir}
+
+\input{package.tex}
+
+\usefapapersize{*,*,1in,*,1in,*}
+\renewcommand{\familydefault}{\sfdefault}
+\linespread{1.3}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Lorem Ipsum}
+\author{Dong-Young Kim}
+\date{\today}
+
+\newcommand{\subject}{subject}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\frontmatter
+  \input{contents/cover.tex}
+  \input{contents/abstract.tex}
+  \tableofcontents
+  \listoffigures
+  \listoftables
+
+\mainmatter
+  \input{chapters/introduction.tex}
+  \input{chapters/example.tex}
+
+\backmatter
+  \appendix
+  \input{contents/references.tex}
+  \printindex
+
+\end{document}

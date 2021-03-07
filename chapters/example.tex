@@ -1,0 +1,273 @@
+\chapter{chapter}
+
+\section{section}
+
+\subsection{subsection}
+
+\subsubsection{subsubsection}
+
+\paragraph{paragraph}
+
+\subparagraph{subparagraph}
+
+\section{Font}
+
+\begin{tabular}{l|l|l}
+  Command              & Environment        & Output              \\\hline
+  \verb|\textrm{}|     & \verb|\rmfamily|   & \textrm{roman}      \\
+  \verb|\textsf{}|     & \verb|\sffamily|   & \textsf{sans serif} \\
+  \verb|\texttt{}|     & \verb|\ttfamily|   & \texttt{typewriter} \\
+  \verb|\textmd{}|     & \verb|\mdseries|   & \textmd{medium}     \\
+  \verb|\textbf{}|     & \verb|\bfseries|   & \textbf{bold}       \\
+  \verb|\textup{}|     & \verb|\upshape|    & \textup{upright}    \\
+  \verb|\textit{}|     & \verb|\itshape|    & \textit{italic}     \\
+  \verb|\textsl{}|     & \verb|\slshape|    & \textsl{slanted}    \\
+  \verb|\textsc{}|     & \verb|\scshape|    & \textsc{small caps} \\
+  \verb|\emph{}|       & \verb|\em|         & \emph{emphasized}   \\
+  \verb|\textnormal{}| & \verb|\normalfont| & \textnormal{normal} \\
+\end{tabular}
+
+\begin{tabular}{l|l}
+  Command              & Output                       \\\hline
+  \verb|\tiny|         & {\tiny tiny}                 \\
+  \verb|\scriptsize|   & {\scriptsize scriptsize}     \\
+  \verb|\footnotesize| & {\footnotesize footnotesize} \\
+  \verb|\small|        & {\small small}               \\
+  \verb|\normalsize|   & {\normalsize normalsize}     \\
+  \verb|\large|        & {\large large}               \\
+  \verb|\Large|        & {\Large Large}               \\
+  \verb|\LARGE|        & {\LARGE LARGE}               \\
+  \verb|\huge|         & {\huge huge}                 \\
+  \verb|\Huge|         & {\Huge Huge}                 \\
+\end{tabular}
+
+\section{Text}
+
+`single quote' ``double quote''
+
+{
+  \noindent
+  noindent
+}
+
+{
+  \setlength{\parindent}{1em}
+  parindent
+}
+
+\begin{quote}
+  Lorem ipsum
+
+  Lorem ipsum
+\end{quote}
+
+\begin{quotation}
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\end{quotation}
+
+\begin{equation}
+  y = Wx + b
+\end{equation}
+
+\verb|verb|
+
+\begin{verbatim}
+  verbatim
+\end{verbatim}
+
+\figurename~\ref{fig:ieee}\는 \pageref{fig:ieee} \pagename
+
+\이 \가,
+\을 \를,
+\와 \과,
+\로 \으로,
+\은 \는,
+\라 \이라
+
+footnote\footnote{\LaTeXe}
+
+\cite{IEEEhowto:IEEEtranpage}
+\cite{IEEEexample:article_typical}
+\cite{IEEEexample:book_typical}
+\cite{IEEEexample:book}
+\cite{IEEEexample:inbook}
+\cite{IEEEexample:incollection}
+\cite{IEEEexample:softmanual}
+\cite{IEEEexample:masters}
+\cite{IEEEexample:phdurl}
+\cite{IEEEexample:techrep}
+\cite{IEEEexample:unpublished}
+\cite{IEEEexample:periodical}
+\cite{IEEEexample:standard}
+\cite{IEEEexample:whitepaper}
+
+\href{http://www.ktug.org}{KTUG}
+
+\textcolor[HTML]{5f4b8b}{Ultra Violet}
+\textcolor[HTML]{00abc0}{Scuba Blue}
+
+\section{Alignment}
+
+\begin{flushleft}
+  flushleft
+\end{flushleft}
+
+\begin{center}
+  center
+\end{center}
+
+\begin{flushright}
+  flushright
+\end{flushright}
+
+\section{List}
+
+\subsection{itemize}
+
+\begin{itemize}
+  \item 1
+  \item 2
+  \item 3
+\end{itemize}
+
+\subsubsection{4*itemize}
+
+\begin{itemize}
+  \item  First Level
+        \begin{itemize}
+          \item  Second Level
+                \begin{itemize}
+                  \item  Third Level
+                        \begin{itemize}
+                          \item  Fourth Level
+                        \end{itemize}
+                \end{itemize}
+        \end{itemize}
+\end{itemize}
+
+\subsection{enumerate}
+
+\begin{enumerate}
+  \item 1
+  \item 2
+  \item 3
+\end{enumerate}
+
+\subsubsection{4*enumerate}
+
+\begin{enumerate}
+  \item First level item
+  \item First level item
+        \begin{enumerate}
+          \item Second level item
+          \item Second level item
+                \begin{enumerate}
+                  \item Third level item
+                  \item Third level item
+                        \begin{enumerate}
+                          \item Fourth level item
+                          \item Fourth level item
+                        \end{enumerate}
+                \end{enumerate}
+        \end{enumerate}
+\end{enumerate}
+
+\begin{enumerate}
+  \item The labels consists of sequential numbers.
+        \begin{itemize}
+          \item The individual entries are indicated with a black dot, a so-called bullet.
+          \item The text in the entries may be of any length.
+        \end{itemize}
+  \item The numbers starts at 1 with every call to the enumerate environment.
+\end{enumerate}
+
+\subsection{decription}
+
+\begin{description}
+  \item[a] 1
+  \item[b] 2
+  \item[c] 3
+\end{description}
+
+\section{Figures}
+\label{sec:figures}
+
+\includegraphics{ieee_mb_blue}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics{ieee_mb_blue}
+  \caption{figure}
+  \label{fig:ieee}
+\end{figure}
+
+\section{Tables}
+\label{sec:tables}
+
+\begin{center}
+  \begin{tabular}{c c c}
+    cell & cell & cell \\
+    cell & cell & cell \\
+    cell & cell & cell
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{|c|c|c|}
+    \hline
+    cell1 & cell2 & cell3 \\
+    cell4 & cell5 & cell6 \\
+    cell7 & cell8 & cell9 \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{||c c c ||}
+    \hline
+    col1  & col2  & col3  \\
+    \hline\hline
+    cell1 & cell2 & cell3 \\\hline
+    cell4 & cell5 & cell6 \\\hline
+    cell7 & cell8 & cell9 \\\hline
+  \end{tabular}
+  \caption{table}
+  \label{tab:tabular}
+\end{table}
+
+\section{Code}
+
+\begin{minted}[linenos]{python}
+  import numpy as np
+
+  def incmatrix(genl1,genl2):
+      m = len(genl1)
+      n = len(genl2)
+      M = None #to become the incidence matrix
+      VT = np.zeros((n*m,1), int)  #dummy variable
+
+      #compute the bitwise xor matrix
+      M1 = bitxormatrix(genl1)
+      M2 = np.triu(bitxormatrix(genl2),1)
+
+      for i in range(m-1):
+          for j in range(i+1, m):
+              [r,c] = np.where(M2 == M1[i,j])
+              for k in range(len(r)):
+                  VT[(i)*n + r[k]] = 1;
+                  VT[(i)*n + c[k]] = 1;
+                  VT[(j)*n + r[k]] = 1;
+                  VT[(j)*n + c[k]] = 1;
+
+                  if M is None:
+                      M = np.copy(VT)
+                  else:
+                      M = np.concatenate((M, VT), 1)
+
+                  VT = np.zeros((n*m,1), int)
+
+      return M
+\end{minted}

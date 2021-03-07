@@ -1,0 +1,116 @@
+\usepackage{fapapersize}
+\usepackage{inputenc}
+\usepackage{kotex}
+\usepackage[pdfencoding=auto,pdfusetitle,pagebackref]{hyperref}
+\usepackage[style=iso]{datetime2}
+\usepackage{blindtext}
+
+\special{pdf:minorversion 7}
+
+% Font
+\setmainfont{NanumSquareRound}[
+  UprightFont={* Regular},
+  BoldFont={* Bold},
+  ItalicFont={*},
+  BoldItalicFont={*},
+  SmallCapsFont={*},
+  FontFace={l}{n}{Font=* Light},
+  FontFace={r}{n}{Font=* Regular},
+  FontFace={b}{n}{Font=* Bold},
+  FontFace={eb}{n}{Font=* ExtraBold},
+  FontFace={i}{i}{Font=*}
+]
+\setsansfont{NanumSquare}[
+  UprightFont={* Regular},
+  BoldFont={* Bold},
+  ItalicFont={*},
+  BoldItalicFont={*},
+  SmallCapsFont={*},
+  FontFace={l}{n}{Font=* Light},
+  FontFace={r}{n}{Font=* Regular},
+  FontFace={b}{n}{Font=* Bold},
+  FontFace={eb}{n}{Font=* ExtraBold},
+]
+\setmonofont{D2Coding}[
+  UprightFont={*},
+  BoldFont={* Bold},
+  ItalicFont={*}
+]
+
+\disablekoreanfonts
+% \setmainhangulfont{NanumSquareRound}
+% \setsanshangulfont{NanumSquare}
+% \setmonohangulfont{D2Coding}
+
+\DeclareRobustCommand{\ulseries}{\fontseries{ul}\selectfont}
+\DeclareRobustCommand{\elseries}{\fontseries{el}\selectfont}
+\DeclareRobustCommand{\lseries}{\fontseries{l}\selectfont}
+\DeclareRobustCommand{\rseries}{\fontseries{r}\selectfont}
+\DeclareRobustCommand{\mseries}{\fontseries{m}\selectfont}
+\DeclareRobustCommand{\sbseries}{\fontseries{sb}\selectfont}
+\DeclareRobustCommand{\bseries}{\fontseries{b}\selectfont}
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareRobustCommand{\xbseries}{\fontseries{xb}\selectfont}
+\DeclareRobustCommand{\iseries}{\fontseries{i}\fontshape{i}\selectfont}
+
+\DeclareTextFontCommand{\textul}{\ulseries}
+\DeclareTextFontCommand{\textel}{\elseries}
+\DeclareTextFontCommand{\textl}{\lseries}
+\DeclareTextFontCommand{\textr}{\rseries}
+\DeclareTextFontCommand{\textm}{\mseries}
+\DeclareTextFontCommand{\textsb}{\sbseries}
+\DeclareTextFontCommand{\textb}{\bseries}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+\DeclareTextFontCommand{\textxb}{\xbseries}
+\DeclareTextFontCommand{\texti}{\iseries}
+
+% Abstract
+\renewcommand{\abstractnamefont}{\normalfont\huge\bfseries}
+\renewcommand{\abstracttextfont}{\normalfont\normalsize}
+% \renewenvironment{abstract}{%
+% }
+
+% TOC
+\renewcommand{\contentsname}{Table of Contents}
+\renewcommand{\bibname}{References}
+
+\renewcommand{\cftdot}{\ensuremath{\cdot}}
+
+\cftsetindents{chapter}{0em}{1.5em}
+\setlength{\cftsectionindent}{1.5em}
+
+\maxsecnumdepth{subsubsection}
+\setsecnumdepth{subsubsection}
+\maxtocdepth{subsubsection}
+\settocdepth{subsubsection}
+
+\renewcommand\cftchapteraftersnum{.\enspace}
+\renewcommand\cftsectionaftersnum{.\enspace}
+\renewcommand\cftsubsectionaftersnum{.\enspace}
+\renewcommand\cftsubsubsectionaftersnum{.\enspace}
+
+% Chapter
+% \chapterstyle{section}
+\renewcommand{\printchaptername}{}
+\renewcommand{\afterchapternum}{\quad}
+\renewcommand{\chapnumfont}{\normalfont\Huge\bfseries}
+\renewcommand{\chaptitlefont}{\normalfont\Huge\bfseries}
+\setlength{\beforechapskip}{10pt}
+\setlength{\afterchapskip}{20pt}
+
+% Style
+\usepackage{makeidx}
+\makeindex
+
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
+
+\usepackage{enumitem}
+\setlist{noitemsep}
+\setlist[itemize]{label=-}
+
+\usepackage{xcolor}
+\definecolor{deuMain}{RGB}{11,61,145} % rgb(11,61,145)
+
+\usepackage{minted}
+\usemintedstyle{rainbow_dash}
