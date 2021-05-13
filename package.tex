@@ -7,6 +7,7 @@
 
 \special{pdf:minorversion 7}
 
+
 % Font
 \setmainfont{NanumSquareRound}[
   UprightFont={* Regular},
@@ -64,11 +65,13 @@
 \DeclareTextFontCommand{\textxb}{\xbseries}
 \DeclareTextFontCommand{\texti}{\iseries}
 
+
 % Abstract
 \renewcommand{\abstractnamefont}{\normalfont\huge\bfseries}
 \renewcommand{\abstracttextfont}{\normalfont\normalsize}
 % \renewenvironment{abstract}{%
 % }
+
 
 % TOC
 \renewcommand{\contentsname}{Table of Contents}
@@ -89,14 +92,19 @@
 \renewcommand\cftsubsectionaftersnum{.\enspace}
 \renewcommand\cftsubsubsectionaftersnum{.\enspace}
 
+
 % Chapter
 % \chapterstyle{section}
 \renewcommand{\printchaptername}{}
 \renewcommand{\afterchapternum}{\quad}
 \renewcommand{\chapnumfont}{\normalfont\Huge\bfseries}
 \renewcommand{\chaptitlefont}{\normalfont\Huge\bfseries}
+
 \setlength{\beforechapskip}{10pt}
 \setlength{\afterchapskip}{20pt}
+
+% \gdef\clearforchapter{\par}
+
 
 % Style
 \usepackage{makeidx}
@@ -114,3 +122,5 @@
 
 \usepackage{minted}
 \usemintedstyle{rainbow_dash}
+
+\usepackage{indentfirst}
