@@ -10,11 +10,16 @@
   nounfonts
 ]{oblivoir}
 
-\input{include/package.tex}
+\input{include/preamble.tex}
+
+\special{pdf:minorversion 7}
 
 \usefapapersize{*,*,1in,*,1in,*}
 \renewcommand{\familydefault}{\sfdefault}
-\linespread{1.3}
+
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0.5em}
+\renewcommand{\baselinestretch}{1.5}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -24,27 +29,28 @@
 
 \newcommand{\subject}{subject}
 \newcommand{\major}{major}
-\newcommand{\studentid}{studentid}
+\newcommand{\id}{id}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
 \frontmatter
-  \input{contents/cover.tex}
+  \input{include/cover.tex}
+  \tableofcontents*
+  \listoffigures*
+  \listoftables*
   \input{contents/abstract.tex}
-  \tableofcontents
-  \listoffigures
-  \listoftables
 
 \mainmatter
-  \input{chapters/introduction.tex}
-  \input{chapters/example.tex}
+  \input{contents/introduction.tex}
+  \input{include/example.tex}
+  \input{contents/conclusion.tex}
 
 \backmatter
   \appendix
   \bibliographystyle{IEEEtran/IEEEtran}
-  \bibliography{IEEEtran/IEEEabrv,IEEEtran/IEEEexample}
+  \bibliography{contents/references,IEEEtran/IEEEabrv,IEEEtran/IEEEexample}
   \printindex
 
 \end{document}

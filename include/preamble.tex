@@ -2,13 +2,30 @@
 \usepackage{inputenc}
 \usepackage{kotex}
 \usepackage[pdfencoding=auto,pdfusetitle,pagebackref]{hyperref}
-\usepackage[style=iso]{datetime2}
+
+\usepackage{indentfirst}
 \usepackage{blindtext}
+\usepackage[style=iso]{datetime2}
 
-\special{pdf:minorversion 7}
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
+
+\usepackage{makeidx}
+\makeindex
+
+\usepackage{xcolor}
+\definecolor{deumain}{RGB}{11,61,145} % rgb(11,61,145)
+
+\usepackage{enumitem}
+\setlist{noitemsep}
+\setlist[itemize]{label=-}
+
+\usepackage{minted}
+\usemintedstyle{rainbow_dash}
 
 
-% Font
+% ANCHOR: Font
+
 \setmainfont{NanumSquareRound}[
   UprightFont={* Regular},
   BoldFont={* Bold},
@@ -66,18 +83,12 @@
 \DeclareTextFontCommand{\texti}{\iseries}
 
 
-% Abstract
-\renewcommand{\abstractnamefont}{\normalfont\huge\bfseries}
-\renewcommand{\abstracttextfont}{\normalfont\normalsize}
-% \renewenvironment{abstract}{%
-% }
+% ANCHOR:TOC
 
-
-% TOC
 \renewcommand{\contentsname}{Table of Contents}
 \renewcommand{\bibname}{References}
 
-\renewcommand{\cftdot}{\ensuremath{\cdot}}
+% \renewcommand{\cftdot}{\ensuremath{\cdot}}
 
 \cftsetindents{chapter}{0em}{1.5em}
 \setlength{\cftsectionindent}{1.5em}
@@ -93,7 +104,16 @@
 \renewcommand\cftsubsubsectionaftersnum{.\enspace}
 
 
-% Chapter
+% ANCHOR: Abstract
+
+\renewcommand{\abstractnamefont}{\normalfont\huge\bfseries}
+\renewcommand{\abstracttextfont}{\normalfont\normalsize}
+% \renewenvironment{abstract}{%
+% }
+
+
+% ANCHOR: Chapter
+
 % \chapterstyle{section}
 \renewcommand{\printchaptername}{}
 \renewcommand{\afterchapternum}{\quad}
@@ -104,23 +124,3 @@
 \setlength{\afterchapskip}{20pt}
 
 % \gdef\clearforchapter{\par}
-
-
-% Style
-\usepackage{makeidx}
-\makeindex
-
-\usepackage{graphicx}
-\graphicspath{ {./figures/} }
-
-\usepackage{enumitem}
-\setlist{noitemsep}
-\setlist[itemize]{label=-}
-
-\usepackage{xcolor}
-\definecolor{deuMain}{RGB}{11,61,145} % rgb(11,61,145)
-
-\usepackage{minted}
-\usemintedstyle{rainbow_dash}
-
-\usepackage{indentfirst}

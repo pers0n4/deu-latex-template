@@ -1,4 +1,8 @@
 !.vscode/settings.json
+
+_minted-main/
+svg-inkscape
+
 main*
 !main.tex
 !main.pdf
